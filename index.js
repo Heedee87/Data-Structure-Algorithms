@@ -1,48 +1,21 @@
-class MyArray {
-  constructor() {
-    this.length = 0;
-    this.data = {};
-  }
+const MyArray = require("./array/Array")
 
-  get(index) {
-    return this.data[index]
-  }
+// const newArray = new MyArray();
+// newArray.push("hi");
+// newArray.push("you");
+// newArray.push("!");
+// // newArray.pop();
+// newArray.delete(0);
+// newArray.push("are");
+// newArray.push("nice");
+// newArray.push("!");
+// newArray.delete(1);
+// console.log(newArray);
 
-  push(item){
-    this.data[this.length] = item;
-    this.length++;
-    return this.length
-  }
+const {reverse} = require("./reverse/reverse")
+// console.log(reverse("Hi My name is Andrei"));
 
-  pop(){
-    const lastItem = this.data[this.length-1];
-    delete this.data[this.length-1];
-    this.length--;
-    return lastItem;
-  }
 
-  delete(index){
-    const item = this.data[index];
-    this.shiftItems(index);
-  }
 
-  shiftItems(index){
-    for(let i = index; i <this.length - 1; i++){
-      this.data[i] = this.data[i+1];
-    }
-    delete this.data[this.length-1];
-    this.length--;
-  }
-}
-
-const newArray = new MyArray();
-newArray.push("hi");
-newArray.push("you");
-newArray.push("!");
-// newArray.pop();
-newArray.delete(0);
-newArray.push("are");
-newArray.push("nice");
-newArray.push("!");
-newArray.delete(1);
-console.log(newArray);
+const {mergeSorterdArrays, mergeSorterdArrays1} = require("./merge/merge");
+mergeSorterdArrays1([0,3,4,31],[4,6,30])

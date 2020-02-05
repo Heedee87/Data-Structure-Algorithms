@@ -36,3 +36,16 @@ const {firstRecurringCharacter,firstRecurringCharacter2} = require("./hash/recur
 
 firstRecurringCharacter2([2,1,1,2,3,5,1,2,4])
 firstRecurringCharacter2([2,3,4,5])
+
+
+//----Linked List----
+const LinkedList = require("./linked-list/linked.list")
+
+const myLinkedList = new LinkedList(10)
+myLinkedList.append(5)
+myLinkedList.append(16)
+myLinkedList.prepend(4)
+myLinkedList.insert(2,99)
+myLinkedList.insert(24,88)
+myLinkedList.remove(3)
+myLinkedList.printList()

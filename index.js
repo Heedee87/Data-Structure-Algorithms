@@ -88,11 +88,22 @@ const Queue = require("./queue/queue");
 
 const myQueue = new Queue;
 
-myQueue.enqueue("Joy");
-myQueue.enqueue("Matt");
-//console.log(myQueue.peek());
-myQueue.enqueue("Pavel");
-console.log(myQueue.enqueue("Samir"))
-console.log(myQueue.dequeue());
-console.log(myQueue.peek());
+// myQueue.enqueue("Joy");
+// myQueue.enqueue("Matt");
+// //console.log(myQueue.peek());
+// myQueue.enqueue("Pavel");
+// console.log(myQueue.enqueue("Samir"))
+// console.log(myQueue.dequeue());
+// console.log(myQueue.peek());
 
+const BinarySearchTree = require("./trees/binarySearchTrees");
+
+
+const tree = new BinarySearchTree();
+tree.insert(9)
+tree.insert(4)
+tree.insert(6)
+tree.insert(20)
+tree.insert(170)
+tree.insert(15)
+console.log(tree.insert(1))

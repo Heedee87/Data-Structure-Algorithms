@@ -132,5 +132,10 @@ const myGraph = new Graph();
 
 const {findFactorialRecursive, findFactorialIterative} = require("./recursion/factorial")
 
-console.log(findFactorialRecursive(5))
-console.log(findFactorialIterative(5))
+// console.log(findFactorialRecursive(5))
+// console.log(findFactorialIterative(5))
+
+const {fibonacciIterative, fibonacciRecursive} = require("./recursion/fibonacci")
+
+console.log(fibonacciIterative(7));
+console.log(fibonacciRecursive(6))

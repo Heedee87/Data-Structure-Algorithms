@@ -62,7 +62,7 @@ const DoublyLinkedList = require("./linked-list/doubly.linked.js")
 // myDoublyLinkedList.remove(2);
 //myDoublyLinkedList.printList()
 
-
+//----Stack-----
 const StackL = require("./stack/stack-linked-list")
 
 const linkStack = new StackL();
@@ -84,6 +84,7 @@ const arrayStack = new StackA();
 // console.log(arrayStack.peek());
 // console.log(arrayStack.pop());
 
+//----Queue-----
 const Queue = require("./queue/queue");
 
 const myQueue = new Queue;
@@ -96,8 +97,8 @@ const myQueue = new Queue;
 // console.log(myQueue.dequeue());
 // console.log(myQueue.peek());
 
+//----Trees-----
 const BinarySearchTree = require("./trees/binarySearchTrees");
-
 
 const tree = new BinarySearchTree();
 // tree.insert(9)
@@ -109,6 +110,8 @@ const tree = new BinarySearchTree();
 //console.log(tree.insert(1))
 // console.log(tree.lookup(20))
 
+
+//----Graphs-----
 const Graph = require("./graphs/graphs");
 
 const myGraph = new Graph();
@@ -130,6 +133,8 @@ const myGraph = new Graph();
 
 // myGraph.showConnections(); 
 
+
+//----Recursion-----
 const {findFactorialRecursive, findFactorialIterative} = require("./recursion/factorial")
 
 // console.log(findFactorialRecursive(5))
@@ -137,5 +142,17 @@ const {findFactorialRecursive, findFactorialIterative} = require("./recursion/fa
 
 const {fibonacciIterative, fibonacciRecursive} = require("./recursion/fibonacci")
 
-console.log(fibonacciIterative(7));
-console.log(fibonacciRecursive(6))
+// console.log(fibonacciIterative(7));
+// console.log(fibonacciRecursive(6))
+
+
+//----Sorting-----
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+const bubbleSort = require("./sorting/bubbleSort");
+// bubbleSort(numbers);
+// console.log(numbers);
+
+const selectionSort = require("./sorting/selectionSort");
+selectionSort(numbers);
+console.log(numbers);

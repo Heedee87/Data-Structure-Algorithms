@@ -154,5 +154,10 @@ const bubbleSort = require("./sorting/bubbleSort");
 // console.log(numbers);
 
 const selectionSort = require("./sorting/selectionSort");
-selectionSort(numbers);
+// selectionSort(numbers);
+// console.log(numbers);
+
+const insertionSort = require("./sorting/insertionSort");
+
+insertionSort(numbers);
 console.log(numbers);

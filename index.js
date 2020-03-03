@@ -159,5 +159,10 @@ const selectionSort = require("./sorting/selectionSort");
 
 const insertionSort = require("./sorting/insertionSort");
 
-insertionSort(numbers);
-console.log(numbers);
+// insertionSort(numbers);
+// console.log(numbers);
+
+const mergeSort = require("./sorting/mergeSort");
+
+const answer = mergeSort(numbers);
+console.log(answer);
